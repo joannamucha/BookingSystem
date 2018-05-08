@@ -1,168 +1,50 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: #eeeeee; }
+/*
+Error: Invalid CSS after "...-self: flex-end": expected "{", was ";"
+        on line 80 of C:\wamp64\www\BookingSystem\style.scss
 
-.area {
-  display: grid;
-  grid-template-areas: "restaurant restaurant terrace"; }
+75: &__bar {
+76:   background-image: url("bar.svg");
+77:   background-size: 270px 270px;
+78:   background-repeat: no-repeat;
+79: <<<<<<< HEAD
+80:   align-self: flex-end;
+81: =======
+82: align-self: flex-end;
+83: >>>>>>> 4de51d57effb88c3847ca875be14b346a32d2f45
+84:   grid-column: 1 / span 2;
+85:   grid-row: 3 / span 2;
 
-.restaurant {
-  grid-area: restaurant;
-  background-color: #2d2d2d;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto; }
-  .restaurant__tableOne {
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
-    justify-self: center;
-    align-self: center;
-    margin: 40px; }
-  .restaurant__tableTwo {
-    grid-column: 3 / span 1;
-    grid-row: 2 / span 1;
-    justify-self: center;
-    align-self: center;
-    margin: 40px; }
-  .restaurant__tableThree {
-    grid-column: 4 / span 1;
-    grid-row: 2 / span 1;
-    justify-self: center;
-    align-self: center;
-    margin: 40px; }
-  .restaurant__tableFour {
-    grid-column: 2 / span 1;
-    grid-row: 3 / span 1;
-    justify-self: center;
-    align-self: center;
-    margin: 40px; }
-  .restaurant__tableFive {
-    grid-column: 3 / span 1;
-    grid-row: 3 / span 1;
-    justify-self: center;
-    align-self: center;
-    margin: 40px; }
-  .restaurant__tableSix {
-    grid-column: 4 / span 1;
-    grid-row: 3 / span 1;
-    justify-self: center;
-    align-self: center;
-    margin: 40px; }
-  .restaurant__tableSeven {
-    grid-column: 3 / span 1;
-    grid-row: 4 / span 1;
-    justify-self: center;
-    align-self: center;
-    margin: 40px; }
-  .restaurant__tableEight {
-    grid-column: 4 / span 1;
-    grid-row: 4 / span 1;
-    justify-self: center;
-    align-self: center;
-    margin: 40px; }
-  .restaurant__bar {
-    background-image: url("bar.svg");
-    background-size: 270px 270px;
-    background-repeat: no-repeat;
-    align-self: flex-end;
-    grid-column: 1 / span 2;
-    grid-row: 3 / span 2;
-    display: flex; }
-    .restaurant__bar h3 {
-      font-size: 32px;
-      align-self: center;
-      margin-left: 30px; }
-
-.terrace {
-  grid-area: terrace;
-  background-color: #444444;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto; }
-  .terrace__tableNine {
-    grid-column: 1 /span 1;
-    grid-row: 2 / span 1;
-    justify-self: center;
-    align-self: center;
-    margin: 40px; }
-  .terrace__tableTen {
-    grid-column: 1 /span 1;
-    grid-row: 3 / span 1;
-    justify-self: center;
-    align-self: center;
-    margin: 40px; }
-  .terrace__tableEleven {
-    grid-column: 1 /span 1;
-    grid-row: 4 / span 1;
-    justify-self: center;
-    align-self: center;
-    margin: 40px; }
-
-.small {
-  width: 90px;
-  height: 90px;
-  border-radius: 50px;
-  background-color: #70E848;
-  display: flex; }
-  .small h3 {
-    margin: auto; }
-
-.medium {
-  width: 90px;
-  height: 90px;
-  background-color: #70E848;
-  border-radius: 3px;
-  display: flex; }
-  .medium h3 {
-    margin: auto; }
-
-.big {
-  width: 150px;
-  height: 80px;
-  background-color: #70E848;
-  border-radius: 3px;
-  display: flex; }
-  .big h3 {
-    margin: auto; }
-
-.tableStatus {
-  display: none;
-  background-color: grey;
-  width: 300px;
-  height: 70px;
-  position: absolute;
-  z-index: 100; }
-  .tableStatus__avaliable {
-    background-color: #70E848;
-    border: none;
-    width: 80px;
-    height: 40px;
-    color: white;
-    border-radius: 3px;
-    margin: 5px; }
-  .tableStatus__book {
-    background-color: #42E8D0;
-    border: none;
-    width: 80px;
-    height: 40px;
-    color: white;
-    border-radius: 3px;
-    margin: 5px; }
-  .tableStatus__taken {
-    background-color: #FF5955;
-    border: none;
-    width: 80px;
-    height: 40px;
-    color: white;
-    border-radius: 3px;
-    margin: 10px 5px; }
-
-.tableStatusDisplay {
-  display: block;
-  margin-left: 68px;
-  margin-top: 200px; }
-
-.red {
-  background-color: #FF5955; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+C:\wamp64\www\BookingSystem\style.scss:80
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...-self: flex-end\": expected \"{\", was \";\"\A         on line 80 of C:\wamp64\www\BookingSystem\style.scss\A \A 75: &__bar {\A 76:   background-image: url(\"bar.svg\");\A 77:   background-size: 270px 270px;\A 78:   background-repeat: no-repeat;\A 79: <<<<<<< HEAD\A 80:   align-self: flex-end;\A 81: =======\A 82: align-self: flex-end;\A 83: >>>>>>> 4de51d57effb88c3847ca875be14b346a32d2f45\A 84:   grid-column: 1 / span 2;\A 85:   grid-row: 3 / span 2;"; }
