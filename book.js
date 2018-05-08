@@ -1,5 +1,5 @@
 var tables = document.querySelectorAll('article.restaurant, article.terrace');
-var form = document.getElementById('tableStatus');
+var form = document.getElementsByClassName('tableStatus')[0];
 console.log(tables);
 
 for ( var i = 0; i < tables.length; i++ ) (function(i){
