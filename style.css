@@ -125,7 +125,7 @@ body {
   .big h3 {
     margin: auto; }
 
-.tableStatu {
+#tableStatus {
   display: none; }
 
 .tableStatusDisplay {
