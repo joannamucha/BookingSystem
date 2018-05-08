@@ -8,3 +8,20 @@ for ( var i = 0; i < tables.length; i++ ) (function(i){
   console.log('I am clicked');
   }
 })(i);
+
+var redTable = document.getElementById('red');
+redTable.onclick = function () {
+let tableOne = document.getElementsByClassName('restaurant__tableOne')[0];
+console.log('whatever');
+  tableOne.classList.add('red');
+  var counter = 5400;
+  setInterval(function() {
+    counter--;
+    if (counter >= 0) {
+      span = document.getElementById("count");
+      span.innerHTML = counter;
+    }
+
+  }, 1000);
+
+}

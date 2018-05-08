@@ -14,7 +14,13 @@
     <h2 class="restaurant__heading">Restaurant</h2>
 <article class="restaurant restaurant__tableOne small ">
 <h3>1</h3>
+<span id="count"></span>
 </article>
+<form class="tableStatus">
+    <button  class="tableStatus__avaliable" type="button" name="button">Avaliable</button>
+    <button class="tableStatus__book" type="button" name="button">Book</button>
+    <button id="red" class="tableStatus__taken" type="button" name="button">Taken</button>
+</form>
 <article class="restaurant restaurant__tableTwo medium">
 <h3>2</h3>
 </article>
@@ -52,13 +58,7 @@
     <h3>11</h3>
     </article>
   </section>
-  <aside class="tableStatus">
-    <form>
-      <input type="checkbox" name="vehicle" value="Available">Available<br>
-      <input type="checkbox" name="vehicle" value="Book">Book<br>
-      <input type="checkbox" name="vehicle" value="Taken">Taken<br>
-    </form>
-  </aside>
+
 </main>
 
 <script src="book.js"></script>

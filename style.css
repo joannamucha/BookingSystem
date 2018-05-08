@@ -64,7 +64,7 @@ body {
     background-image: url("bar.svg");
     background-size: 270px 270px;
     background-repeat: no-repeat;
-    align-self: center;
+    align-self: flex-end;
     grid-column: 1 / span 2;
     grid-row: 3 / span 2;
     display: flex; }
@@ -102,7 +102,7 @@ body {
   width: 90px;
   height: 90px;
   border-radius: 50px;
-  background-color: #008b21;
+  background-color: #70E848;
   display: flex; }
   .small h3 {
     margin: auto; }
@@ -110,7 +110,7 @@ body {
 .medium {
   width: 90px;
   height: 90px;
-  background-color: #008b21;
+  background-color: #70E848;
   border-radius: 3px;
   display: flex; }
   .medium h3 {
@@ -119,16 +119,50 @@ body {
 .big {
   width: 150px;
   height: 80px;
-  background-color: #008b21;
+  background-color: #70E848;
   border-radius: 3px;
   display: flex; }
   .big h3 {
     margin: auto; }
 
 .tableStatus {
-  display: none; }
+  display: none;
+  background-color: grey;
+  width: 300px;
+  height: 70px;
+  position: absolute;
+  z-index: 100; }
+  .tableStatus__avaliable {
+    background-color: #70E848;
+    border: none;
+    width: 80px;
+    height: 40px;
+    color: white;
+    border-radius: 3px;
+    margin: 5px; }
+  .tableStatus__book {
+    background-color: #42E8D0;
+    border: none;
+    width: 80px;
+    height: 40px;
+    color: white;
+    border-radius: 3px;
+    margin: 5px; }
+  .tableStatus__taken {
+    background-color: #FF5955;
+    border: none;
+    width: 80px;
+    height: 40px;
+    color: white;
+    border-radius: 3px;
+    margin: 10px 5px; }
 
 .tableStatusDisplay {
-  display: block; }
+  display: block;
+  margin-left: 68px;
+  margin-top: 200px; }
+
+.red {
+  background-color: #FF5955; }
 
 /*# sourceMappingURL=style.css.map */
