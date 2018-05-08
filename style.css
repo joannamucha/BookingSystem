@@ -103,4 +103,10 @@ body {
   .big h3 {
     margin: auto; }
 
+.tableStatu {
+  display: none; }
+
+.tableStatusDisplay {
+  display: block; }
+
 /*# sourceMappingURL=style.css.map */
