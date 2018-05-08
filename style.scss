@@ -76,7 +76,7 @@ grid-template-rows: auto;
   background-image: url("bar.svg");
   background-size: 270px 270px;
   background-repeat: no-repeat;
-  align-self: center;
+align-self: flex-end;
   grid-column: 1 / span 2;
   grid-row: 3 / span 2;
   display: flex;
@@ -156,5 +156,5 @@ margin:auto;
 }
 .tableStatusDisplay {
   display: block;
-  
+
 }
