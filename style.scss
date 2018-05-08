@@ -1,3 +1,6 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 .area {
   display: grid;
   grid-template-areas: "restaurant restaurant terrace";
@@ -7,12 +10,85 @@
 grid-area: restaurant;
 background-color: pink;
 display: grid;
-
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: auto;
+grid-gap: 20px;
+&__tableOne {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  justify-self: center;
+   align-self: center;
+}
+&__tableTwo {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+  justify-self: center;
+   align-self: center;
+}
+&__tableThree {
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+  justify-self: center;
+   align-self: center;
+}
+&__tableFour {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  justify-self: center;
+   align-self: center;
+}
+&__tableFive {
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+  justify-self: center;
+   align-self: center;
+}
+&__tableSix {
+  grid-column: 4 / span 1;
+  grid-row: 3 / span 1;
+  justify-self: center;
+   align-self: center;
+}
+&__tableSeven {
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+  justify-self: center;
+   align-self: center;
+}
+&__tableEight {
+  grid-column: 4 / span 1;
+  grid-row: 4 / span 1;
+  justify-self: center;
+   align-self: center;
+}
 }
 
 .terrace {
   grid-area: terrace;
   background-color: brown;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  &__tableNine {
+    grid-column: 1 /span 1;
+    grid-row: 2 / span 1;
+    justify-self: center;
+     align-self: center;
+  }
+  &__tableTen {
+    grid-column: 1 /span 1;
+    grid-row: 3 / span 1;
+    justify-self: center;
+     align-self: center;
+  }
+  &__tableEleven {
+    grid-column: 1 /span 1;
+    grid-row: 4 / span 1;
+    justify-self: center;
+     align-self: center;
+  }
+
 }
 
 .small {
