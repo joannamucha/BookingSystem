@@ -1,1 +1,48 @@
+.area {
+  display: grid;
+  grid-template-areas: "restaurant restaurant terrace";
+}
 
+.restaurant {
+grid-area: restaurant;
+background-color: pink;
+display: grid;
+
+}
+
+.terrace {
+  grid-area: terrace;
+  background-color: brown;
+}
+
+.small {
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  background-color: green;
+  display: flex;
+
+  h3 {
+margin:auto;
+  }
+}
+.medium {
+  width: 90px;
+  height: 90px;
+  background-color: green;
+  border-radius: 3px;
+  display: flex;
+  h3 {
+    margin: auto;
+  }
+}
+.big {
+  width: 150px;
+  height: 80px;
+  background-color: green;
+  border-radius: 3px;
+  display: flex;
+  h3 {
+    margin: auto;
+  }
+}
