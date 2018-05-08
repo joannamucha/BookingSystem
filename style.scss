@@ -1,92 +1,120 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  color: rgb(238, 238, 238);
 }
 .area {
   display: grid;
   grid-template-areas: "restaurant restaurant terrace";
+
 }
 
 .restaurant {
 grid-area: restaurant;
-background-color: pink;
+background-color: rgb(45, 45, 45) ;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-template-rows: auto;
-grid-gap: 20px;
+
 &__tableOne {
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
   justify-self: center;
    align-self: center;
+   margin: 40px;
 }
 &__tableTwo {
   grid-column: 3 / span 1;
   grid-row: 2 / span 1;
   justify-self: center;
    align-self: center;
+    margin: 40px;
 }
 &__tableThree {
   grid-column: 4 / span 1;
   grid-row: 2 / span 1;
   justify-self: center;
    align-self: center;
+    margin: 40px;
 }
 &__tableFour {
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
   justify-self: center;
    align-self: center;
+    margin: 40px;
 }
 &__tableFive {
   grid-column: 3 / span 1;
   grid-row: 3 / span 1;
   justify-self: center;
    align-self: center;
+  margin: 40px;
+
 }
 &__tableSix {
   grid-column: 4 / span 1;
   grid-row: 3 / span 1;
   justify-self: center;
    align-self: center;
+     margin: 40px;
 }
 &__tableSeven {
   grid-column: 3 / span 1;
   grid-row: 4 / span 1;
   justify-self: center;
    align-self: center;
+     margin: 40px;
 }
 &__tableEight {
   grid-column: 4 / span 1;
   grid-row: 4 / span 1;
   justify-self: center;
    align-self: center;
+     margin: 40px;
 }
+&__bar {
+  background-image: url("bar.svg");
+  background-size: 270px 270px;
+  background-repeat: no-repeat;
+  align-self: center;
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+  display: flex;
+  h3 {
+    font-size: 32px;
+align-self: center;
+margin-left: 30px;
+  }
+  }
 }
 
 .terrace {
   grid-area: terrace;
-  background-color: brown;
+  background-color:rgb(68, 68, 68);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-gap: 20px;
   &__tableNine {
     grid-column: 1 /span 1;
     grid-row: 2 / span 1;
     justify-self: center;
      align-self: center;
+       margin: 40px;
   }
   &__tableTen {
     grid-column: 1 /span 1;
     grid-row: 3 / span 1;
     justify-self: center;
      align-self: center;
+        margin: 40px;
+
   }
   &__tableEleven {
     grid-column: 1 /span 1;
     grid-row: 4 / span 1;
     justify-self: center;
      align-self: center;
+        margin: 40px;
   }
 
 }
@@ -95,7 +123,7 @@ grid-gap: 20px;
   width: 90px;
   height: 90px;
   border-radius: 50px;
-  background-color: green;
+  background-color:rgb(0, 139, 33);
   display: flex;
 
   h3 {
@@ -105,7 +133,7 @@ margin:auto;
 .medium {
   width: 90px;
   height: 90px;
-  background-color: green;
+  background-color:rgb(0, 139, 33);
   border-radius: 3px;
   display: flex;
   h3 {
@@ -115,7 +143,7 @@ margin:auto;
 .big {
   width: 150px;
   height: 80px;
-  background-color: green;
+  background-color: rgb(0, 139, 33);
   border-radius: 3px;
   display: flex;
   h3 {
